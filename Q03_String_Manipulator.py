@@ -29,11 +29,16 @@ for i in sent:
 print(f"Characters (without spaces): {len_space_removed}")
 
 # Total words
-words = 1
-for i in sent:
-    if i == " ":
-        words += 1
-print(f"Words: {words}")
+word_count = 0
+in_word = False
+for char in sent:
+    if char != " " and not in_word:
+        word_count += 1
+        in_word = True
+    elif char == " ":
+        in_word = False
+
+print(f"Words: {word_count}")
 
 # Uppercase
 print("UPPERCASE: ",sent.upper())
@@ -53,5 +58,7 @@ last_word = sent.strip().split()[-1]
 print(f"Last word: {last_word}")
 
 # Reversed
-reversed_sent = sent[::-1]
+reversed_sent = ""
+for char in sent:
+    reversed_sent = char + reversed_sent
 print(f"Reversed: {reversed_sent}")

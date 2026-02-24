@@ -8,16 +8,15 @@ Rules:
 - Display transaction messages and updated balance after each transaction
 """
 
-print("ATM Simulator Menu:")
-print("1. Check Balance")
-print("2. Deposit Money")
-print("3. Withdraw Money")
-print("4. Exit")
-
 # Initial Balance
 balance = 10000
 
 while True:
+    print("ATM SIMULATOR")
+    print("1. Check Balance")
+    print("2. Deposit Money")
+    print("3. Withdraw Money")
+    print("4. Exit")
     # Take user input of choice
     choice = input("Enter your choice: ")
 
@@ -32,13 +31,13 @@ while True:
     
     elif choice == "3":
         withdrawal = int(input("Enter amount to withdraw: "))
-        if (balance - withdrawal) > 500:
+        if (balance - withdrawal) >= 500:
             balance -= withdrawal
             print("Withdrawal successful!")
             print(f"New balance: {balance}")
         else:
-           print("Withdrawal NOT successful, as minimum balance becomes less than ₹500") 
-           print(f"Amount available for withdrawal: {withdrawal - 500}")
+           print("Withdrawal NOT successful, as account should have minimum balance of ₹500") 
+           print(f"Amount available for withdrawal: {balance - 500}")
     
     elif choice == "4":
         print("Exiting program")
