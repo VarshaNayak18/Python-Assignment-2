@@ -1,0 +1,1 @@
+This repository contains all the assignment submissions of the internship at CampusPe
