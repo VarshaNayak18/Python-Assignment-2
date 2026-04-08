@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #10a37f;
+  --bg: #f7f7f8;
+  --sidebar: #202123;
+  --text: #333;
+  --user-msg: #d1f4e0;
+  --ai-msg: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+}
