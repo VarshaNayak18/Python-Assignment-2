@@ -69,3 +69,47 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+
+
+.message {
+  max-width: 60%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* User */
+.user {
+  align-self: flex-end;
+  background: var(--user-msg);
+}
+
+/* AI */
+.ai {
+  align-self: flex-start;
+  background: var(--ai-msg);
+}
+
+
+.input-area {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.send-btn {
+  margin-left: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
