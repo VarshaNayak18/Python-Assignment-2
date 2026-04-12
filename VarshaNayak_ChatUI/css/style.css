@@ -153,3 +153,34 @@ textarea {
     transform: translateY(0);
   }
 }
+
+
+.sidebar {
+  width: 260px;
+  background: #202123;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.history-item {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.history-item:hover {
+  background: #2a2b32;
+}
+
+.profile {
+  padding: 10px;
+  border-top: 1px solid #444;
+}
